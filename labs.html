@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторні роботи</title>
+  <style>
+    /* Скидання стилів */
+    body, h1, h2, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+    /* Верхня панель */
+    header {
+      background: #32cd32;
+      padding: 10px 20px;
+    }
+
+    header .back {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Основний контейнер */
+    main {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    /* Карточки */
+    .cards {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 15px;
+      background: #fafafa;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    /* Кнопка */
+    .btn {
+      display: inline-block;
+      background: #32cd32;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background: #28a428;
+    }
+
+    /* 📱 Адаптивність */
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Верхня панель -->
+  <header>
+    <a href="index.html" class="back">← Назад на головну</a>
+  </header>
+
+  <!-- Основний контент -->
+  <main>
+    <h1>Лабораторні роботи</h1>
+    
+    <div class="cards">
+      <!-- Лабораторнна робота 1 -->
+      <div class="card">
+        <h2>Лабораторна робота №1 — Основи HTML</h2>
+        <p>
+          Мета лабораторної роботи полягає у навчанні студентів основам гіпертекстової розмітки мовою HTML (HyperText Markup Language)
+          та набуття ще практичних навичок у створенні вебсторінок.
+        </p>
+        <a href="#" class="btn">Переглянути</a>
+      </div>
+
+      <!-- Лабораторна робота 2 -->
+      <div class="card">
+        <h2>Лабораторна робота №2 — Основи CSS</h2>
+        <p>
+          Мета лабораторної роботи — навчити студентів основним правилам та практичним аспектам використання Cascading Style Sheets (CSS) для стилізації вебсторінок.
+        </p>
+        <a href="#" class="btn">Переглянути</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
